@@ -1,3 +1,14 @@
+/**
+ * For N = 3
+ *  *
+    *1*
+    *121*
+    *12321*
+    *121*
+    *1*
+    *
+
+ */
 import java.util.Scanner;
 public class Solution {
 

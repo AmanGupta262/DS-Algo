@@ -1,3 +1,14 @@
+/*
+ * Write a program to print parallelogram pattern for the given N number of rows.
+ * For N = 4
+ * ****
+ * -****
+ * --****
+ * ---****
+ * 
+ * The - represent spaces.
+ */
+
 import java.util.Scanner;
 public class Main {
 	
