@@ -6,18 +6,20 @@
     Corresponding Decimal number (as integer)
  */
 import java.util.Scanner;
-public class binaryToDecimal {
+
+class binaryToDecimal {
     public static void main(String[] args) {
-		// Write your code here
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
-        int d = 0;
-        for(int i = 1; n>0; i*=2){
-            int r = n%10;
-            d += i*r;
-            n = n/10;
+        int p = 0;
+        int ans = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            ans += (int) Math.pow(2, p) * digit;
+            n /= 10;
+            p += 1;
         }
-        System.out.print(d);
+        System.out.print(ans);
 
-	}
+    }
 }
